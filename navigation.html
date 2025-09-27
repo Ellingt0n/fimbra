@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Навигация по страницам - Fimbra</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css?_v=20250803032621">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background: #FBFBFB;
+			font-family: Roboto, sans-serif;
+		}
+
+		.navigation {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 40px 20px;
+		}
+
+		.navigation__container {
+			max-width: 800px;
+			width: 100%;
+			background: #FFF;
+			border-radius: 12px;
+			padding: 40px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.navigation__header {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.navigation__title {
+			color: #090D0B;
+			font-size: 32px;
+			font-weight: 500;
+			margin-bottom: 8px;
+		}
+
+		.navigation__subtitle {
+			color: rgba(9, 13, 11, 0.6);
+			font-size: 16px;
+		}
+
+		.navigation__grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+		}
+
+		.navigation__section {
+			background: #F8F9FA;
+			border-radius: 8px;
+			padding: 24px;
+		}
+
+		.navigation__section-title {
+			color: #5C9248;
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 16px;
+			padding-bottom: 8px;
+		}
+
+		.navigation__list {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		.navigation__link {
+			color: #090D0B;
+			text-decoration: none;
+			padding: 12px 16px;
+			border-radius: 6px;
+			background: #FFF;
+			border: 1px solid rgba(9, 13, 11, 0.1);
+			display: flex;
+			align-items: center;
+		}
+
+
+
+
+
+
+		@media (max-width: 768px) {
+			.navigation__container {
+				padding: 24px;
+			}
+
+			.navigation__title {
+				font-size: 24px;
+			}
+
+			.navigation__grid {
+				grid-template-columns: 1fr;
+				gap: 20px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<section class="navigation">
+				<div class="navigation__container">
+					<div class="navigation__header">
+						<h1 class="navigation__title">Навигация по страницам</h1>
+					</div>
+
+					<div class="navigation__grid">
+						<div class="navigation__section">
+							<h2 class="navigation__section-title">Основные страницы</h2>
+							<ul class="navigation__list">
+								<li><a class="navigation__link" href="indexx.html">Главная страница</a></li>
+								<li><a class="navigation__link" href="ads.html">Каталог объявлений</a></li>
+								<li><a class="navigation__link" href="advertisement.html">Страница объявления</a></li>
+								<li><a class="navigation__link" href="advertisement-req.html">Создание запроса</a></li>
+							</ul>
+						</div>
+
+						<div class="navigation__section">
+							<h2 class="navigation__section-title">Компании</h2>
+							<ul class="navigation__list">
+								<li><a class="navigation__link" href="company.html">Профиль компании</a></li>
+								<li><a class="navigation__link" href="company-review.html">Отзывы компании</a></li>
+							</ul>
+						</div>
+
+						<div class="navigation__section">
+							<h2 class="navigation__section-title">Авторизация</h2>
+							<ul class="navigation__list">
+								<li><a class="navigation__link" href="registration.html">Регистрация учетной записи</a>
+								</li>
+								<li><a class="navigation__link" href="registration-next.html">Регистрация компании</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="navigation__section">
+							<h2 class="navigation__section-title">Личный кабинет</h2>
+							<ul class="navigation__list">
+								<li><a class="navigation__link" href="lk.html">Личный кабинет</a></li>
+								<li><a class="navigation__link" href="my-oferta.html">Мои предложения</a></li>
+								<li><a class="navigation__link" href="my-requests.html">Мои запросы</a></li>
+								<li><a class="navigation__link" href="my-favorite.html">Избранное</a></li>
+								<li><a class="navigation__link" href="my-messages.html">Сообщения</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="js/app.min.js?_v=20250803032621"></script>
+</body>
+
+</html>
